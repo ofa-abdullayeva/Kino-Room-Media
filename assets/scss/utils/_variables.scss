@@ -1,0 +1,65 @@
+/*========= Variables ==========*/
+
+// colors starts
+$primary-color: #E51515;
+$secondary-color: #14151A;
+$date-color: #FFB320;
+$comment-color: #08ABBD;
+$gray-color: #9F9F9F;
+$light-color: #FEFEFE;
+$general-transition: all .5s;
+
+
+$color-white: #ffffff;
+$color-black: #252a32;
+$color-light: #f1f5f8;
+$color-red: #d32f2f;
+$color-blue: #148cb8;
+
+// icon-color #BCBCBC
+//  original #E51515
+// colors ends rgb(104, 214, 150)
+
+// fonts
+$primary-font: "Change", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+/*========= Utilitis ==========*/
+
+.bg {
+	&-dark{
+		background-color: $secondary-color;
+	}
+	&-light{
+		background-color: $light-color;
+	}
+
+}
+
+.m {
+	&-1{
+		margin: 1rem;
+	}
+	
+}
+
+
+.ml {
+	&-2{
+		margin-left: 2rem;
+	}
+}
+
+.text-light{
+	color: $light-color;
+}
+
+.text-primary{
+	color: $primary-color;
+}
+
+
+.text-center{
+	text-align: center;
+}

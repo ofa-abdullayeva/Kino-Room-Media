@@ -1,0 +1,27 @@
+/*==========BUTTONS START==========*/
+.btn{
+    background-color: $light-color;
+    color: $primary-color;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    transition: all .5s;
+
+    &:hover{
+        background-color: rgb(104, 214, 150);
+        color: $light-color;
+    }
+
+    &-primary{
+        background-color: rgb(104, 214, 150);
+        color: $light-color; 
+        &:hover{
+            background-color: $light-color;
+            color: $primary-color;
+        }
+    }
+
+}
+/*==========BUTTONS END==========*/
