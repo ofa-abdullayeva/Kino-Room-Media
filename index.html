@@ -73,7 +73,9 @@
         <div class="container">
             <div class="nav-header">
                 <nav class="navbar">
+                    <a class="show" href="javascript:void();" onclick="openNav();"><i class="fas fa-bars"></i></a>
                     <ul class="navbar-list">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <li><a href="#">Ana səhifə</a></li>
                         <li><a href="#">Xidmətlər</a></li>
                         <li><a href="#">Filmlər</a>
@@ -93,8 +95,10 @@
                     </ul>
 
                     <div class="login-area">
-                        <a class="btn btn-primary" href="https://web.whatsapp.com/" target="_blank"><span><i
-                                    class="fab fa-whatsapp"></span></i>Whatsapp </a>
+                        <a class="btn btn-primary" href="https://web.whatsapp.com/" target="_blank">
+                            <span><i class="fab fa-whatsapp"></i></i></span>
+                            <span class="wp">Whatsapp </span> 
+                        </a>
                     </div>
             </div>
             </nav>
@@ -147,22 +151,32 @@
         <!--Slider-->
 
         <div id="slider">
-            <h2 class="text-primary text-center mb-2">Aylıq Abunə Xidmətlərimiz</h2>
+            <h2 class="text-primary text-center mb-1">Aylıq Abunə Xidmətlərimiz</h2>
             <div class="slide" style="background:dodgerBlue;">
-                <img src="./assets/images/videoroom/3.jpeg">
+                <img src="./assets/images/videoroom/mail.jpeg">
             </div>
 
             <div class="slide" style="background:coral;">
-                <img src="./assets/images/videoroom/2.jpeg">
+                <img src="./assets/images/videoroom/mail (1).jpeg">
             </div>
 
             <div class="slide" style="background:crimson;">
-                <img src="./assets/images/videoroom/1.jpeg">
+                <img src="./assets/images/videoroom/mail (2).jpeg">
             </div>
 
             <div class="slide" style="background: #6edf10;">
-                <img src="./assets/images/videoroom/4.jpeg">
+                <img src="./assets/images/videoroom/mail (3).jpeg">
             </div>
+
+            <div class="slide" style="background: #6edf10;">
+                <img src="./assets/images/videoroom/mail (4).jpeg">
+            </div>
+
+            <div class="slide" style="background: #6edf10;">
+                <img src="./assets/images/videoroom/mail (5).jpeg">
+            </div>
+
+           
 
             <!--Controlling arrows-->
             <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left"
@@ -173,7 +187,12 @@
             </span>
         </div>
         <div id="dots-con">
-            <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
 
@@ -465,7 +484,8 @@
                         <ul>
                             <li>
                                 <i class="fas fa-map-marker-alt fa-3x"></i>
-                                <p>Downtown Suite,Avenue 123/C:5 Akcay - Balikkesir </p>
+                                <p>Əhməd Rəcəbli 31.</p>
+                                <p>Aztex Plaza 5-ci mərtəbə</p>
                             </li>
 
                             <li>
@@ -526,7 +546,7 @@
                         <div class="icons">
                             <a href="#" target="_blank" class="fab fa-facebook"></a>
                             <a href="#" target="_blank" class="fab fa-instagram"></a>
-                            <a href="#" target="_blank" ><i class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                             <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         </div>
                         <div class="cancel center">

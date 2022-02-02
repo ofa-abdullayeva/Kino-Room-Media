@@ -84,3 +84,41 @@ clc.addEventListener("click", () => {
   }
 });
 
+
+//------------- SIDEBAR MENU START --------------//
+
+
+function openNav() {
+	document.querySelector(".nav-list").classList.add("nav-active");
+
+
+ }
+
+
+ function closeNav() {
+	document.querySelector(".nav-list").classList.remove("nav-active");
+	
+ }
+
+
+
+//----------- SIDEBAR MENU END -------//
+//------------- SIDEBAR MENU START --------------//
+
+
+ function openNav() {
+	document.querySelector(".navbar-list").classList.add("nav-active");
+
+
+ }
+
+
+ function closeNav() {
+	document.querySelector(".navbar-list").classList.remove("nav-active");
+	
+ }
+
+
+
+//----------- SIDEBAR MENU END -------//
+

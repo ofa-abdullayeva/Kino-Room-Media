@@ -519,6 +519,14 @@ img {
   margin-right: 1rem;
 }
 
+.main-header .nav-header .navbar .navbar-list .closebtn {
+  display: none;
+}
+
+.main-header .nav-header .navbar .show {
+  display: none;
+}
+
 /*==========HEADER END==========*/
 /*======= MAIN START========*/
 /*  MAIN SLIDER START */
@@ -1317,50 +1325,71 @@ footer .container .down-social-link .yt {
   .main-header .top-header .container .search-area {
     display: none;
   }
-  .main-header .nav-header .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .main-header .nav-header .navbar .show {
+    font-size: 17px;
+    padding: 15px;
+    color: red;
+    display: block;
   }
   .main-header .nav-header .navbar .navbar-list {
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    background-color: #14151a;
+    z-index: 100;
+    transition: all .5s;
+    transform: translateX(100%);
   }
   .main-header .nav-header .navbar .navbar-list li {
-    line-height: 8rem;
-    position: relative;
-    transition: all .5s;
+    padding: 5px;
   }
   .main-header .nav-header .navbar .navbar-list li .dropdown {
     position: absolute;
     background-color: #2a2c37;
-    width: 150%;
-    left: 50%;
+    width: 80%;
+    left: 10%;
     z-index: 10;
-    top: 12rem;
+    top: 1.2rem;
     transition: all .5s;
     opacity: 0;
     visibility: hidden;
   }
   .main-header .nav-header .navbar .navbar-list li .dropdown li {
-    line-height: 4rem;
+    line-height: 2rem;
   }
-  .main-header .nav-header .navbar .navbar-list li:hover {
-    background-color: #E51515;
+  .main-header .nav-header .navbar .navbar-list li li {
+    line-height: 1rem;
   }
-  .main-header .nav-header .navbar .navbar-list li:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    top: 8rem;
+  .main-header .nav-header .navbar .navbar-list li a {
+    font-size: 16px;
+    padding: 3px;
   }
-  .main-header .nav-header .navbar .navbar-list a {
-    padding: 0 1rem;
-    font-size: 1.6rem;
-    letter-spacing: 2px;
+  .main-header .nav-header .navbar .navbar-list .closebtn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 25px;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
   }
-  .main-header .nav-header .navbar .navbar-list i {
-    color: #FEFEFE;
-    font-size: 1.6rem;
-    margin-right: 1rem;
+  .main-header .nav-header .navbar .login-area .fa-whatsapp {
+    border-radius: 5px;
+    color: red;
+  }
+  .main-header .nav-header .navbar .login-area .wp {
+    display: none;
+  }
+  .main-header .nav-header .navbar .nav-active {
+    transform: translateX(0%) !important;
+    right: 0;
   }
   .main .masonary {
     display: flex;
@@ -1486,10 +1515,10 @@ footer .container .down-social-link .yt {
     object-fit: cover;
   }
   .main .recent-games .recent-game-features .rating {
-    width: 1rem;
-    height: 1rem;
-    line-height: 1rem;
-    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
   }
   .main .recent-games .recent-game-features .game-title {
     font-size: 1.1rem !important;
