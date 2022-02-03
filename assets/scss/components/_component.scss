@@ -1,15 +1,16 @@
  /*      RATING     */
  .rating {
     position: absolute;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     top: 1rem;
     left: 1rem;
     background-color: $light-color;
     opacity: 0;
     z-index: 100;
     line-height: 3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: $primary-font;
     text-align: center;
     transition: all .5s;
@@ -98,8 +99,9 @@
 //**   CARD   **//
 
 .card{
-    height: 40rem;
+    height: 30rem;
     perspective: 1000px;
+    margin: 2rem auto;
 
     &-inner {
         position: relative;
@@ -119,7 +121,11 @@
     }
 
     .card-front {
-    background-color: $primary-color;
+    background-color: #14151A;
+
+        h4{
+            padding: 3rem;
+        }
     }
 
     .card-back{
@@ -132,7 +138,7 @@
         vertical-align: middle;
 
         p {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
 
         }
         a {

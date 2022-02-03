@@ -154,7 +154,32 @@
 
     .main{
 
-   
+     .team{
+        .team-members{
+            display: flex;
+            flex-direction: column;
+
+            .team-member {
+                width: 80%;
+                height: 100%;
+                margin-left: 10%;
+
+                .team-member{
+                    .card{
+                        margin-top: 2rem;
+                    }
+                }
+            
+                // &:first-child {
+                //   margin-right: 1.5rem;
+                // }
+            
+                // &:last-child {
+                //   margin-left: 3rem;
+                // }
+              }
+        }
+     }
       .masonary{
         display: flex;
         flex-direction: column;
@@ -436,20 +461,17 @@
 
           .recent-games {
           
-       
+            display: flex;
+            flex-direction: column;
             &-content {
-               display: grid;
-               grid-template-columns:  1fr 1fr;
-               grid-template-rows: auto;
-               grid-row-gap: 0.5rem;
-               grid-column-gap:0.5rem;
-               grid-template-areas: 'item-1 item-2'
-                                    'item-3 item-4'
-                                    'item-5 item-6';
+                
+            display: flex;
+            flex-direction: column;
             }
             .recent-game-features{
                //  @include flex-display(flex,center,space-between);
             //    display: flex;
+            //    flex-direction: column;
        
                 .recent-game-thumbnail{
                     height: 100%;
@@ -475,8 +497,9 @@
             }
        
             .recent-game{
-               width: auto;
+               width: 80%;
                height: 100%;
+               margin: 10px auto;
                background-color: $secondary-color;
        
                &-thumbnail{
@@ -591,6 +614,19 @@
                grid-area: item-6;
            }
        
+        }
+
+        .about{
+            .about-desc{
+                width: 70%;
+                text-align: center;
+                padding: 2.5rem;
+            }
+
+            .box{
+                width: 70%;
+                margin-left: auto ;
+            }
         }
      }
 
