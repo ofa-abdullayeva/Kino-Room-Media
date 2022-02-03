@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
   color: #E51515;
   font-weight: 300;
   letter-spacing: .3rem;
+  font-style: italic;
 }
 
 h1 {
@@ -534,6 +535,12 @@ img {
   position: relative;
 }
 
+.main-slider .single-slide img {
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+}
+
 .main-slider .single-slide .slide-overlay {
   position: absolute;
   top: 0;
@@ -567,10 +574,21 @@ img {
   font-size: 1.4rem;
 }
 
+#slider .slide {
+  height: 80vh;
+}
+
+#slider .slide img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
 /*  MAIN SLIDER END */
 /*  RECENT GAMES SECTION START */
 .recent-games {
   background-color: black;
+  background-image: url(../../images/videoroom/vikings-valhalla-poster.jpg);
 }
 
 .recent-games-content {
@@ -1037,6 +1055,11 @@ img {
 
 /*  CONTACT SECTION END */
 /*  ABOUT SECTION START */
+.about h2 {
+  text-align: center;
+  color: red;
+}
+
 .about .about_main {
   background: black;
   background: linear-gradient(132deg, #01070e 17%, #000102 73%);
@@ -1047,8 +1070,17 @@ img {
   height: 100%;
 }
 
-.about .about-title h2 {
-  font-style: italic;
+.about .about-desc {
+  width: 30%;
+}
+
+.about .about-desc p {
+  color: white;
+  font-size: 16px;
+}
+
+.about .about-desc p .kino {
+  font-size: 24px;
   color: red;
 }
 
@@ -1503,7 +1535,7 @@ footer .container .down-social-link .yt {
     grid-template-rows: auto;
     grid-row-gap: 0.5rem;
     grid-column-gap: 0.5rem;
-    grid-template-areas: 'item-1  item-2' 'item-3 item-4 ' 'item-5 item-6';
+    grid-template-areas: 'item-1 item-2' 'item-3 item-4' 'item-5 item-6';
   }
   .main .recent-games .recent-game-features .recent-game-thumbnail {
     height: 100%;

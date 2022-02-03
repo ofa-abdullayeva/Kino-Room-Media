@@ -154,7 +154,7 @@
 
     .main{
 
-
+   
       .masonary{
         display: flex;
         flex-direction: column;
@@ -443,9 +443,9 @@
                grid-template-rows: auto;
                grid-row-gap: 0.5rem;
                grid-column-gap:0.5rem;
-               grid-template-areas: 'item-1  item-2'
-                                    'item-3 item-4 '
-                                    'item-5 item-6'  ;
+               grid-template-areas: 'item-1 item-2'
+                                    'item-3 item-4'
+                                    'item-5 item-6';
             }
             .recent-game-features{
                //  @include flex-display(flex,center,space-between);

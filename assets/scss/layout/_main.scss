@@ -5,6 +5,12 @@
     .single-slide{
         position: relative;
 
+        img{
+          width: 100%;
+          height: 75vh;
+          object-fit: cover;
+        }
+
         .slide-overlay {
             position: absolute;
             top: 0;
@@ -27,6 +33,7 @@
             background: linear-gradient(to right, rgba(0,0,0, .6), rgba(0,0,0, .6));
             animation: mainani 3s ease-out;
             border-radius: 5%;
+          
              video{
                width: 100%;
                height: 100%;
@@ -42,12 +49,25 @@
     }
 
 }
+
+
+#slider{
+  .slide{
+    height: 80vh;
+    img{
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+    }
+  }
+}
 /*  MAIN SLIDER END */
 
 /*  RECENT GAMES SECTION START */
 
  .recent-games {
      background-color: black;
+     background-image: url(../../images/videoroom/vikings-valhalla-poster.jpg);
 
      &-content {
         display: grid;
@@ -553,6 +573,11 @@
 
 /*  ABOUT SECTION START */
 .about{
+
+  h2{
+    text-align: center;
+    color: red;
+  }
   .about_main {
     background: black;
     background: linear-gradient(
@@ -567,10 +592,15 @@
     height: 100%;
   }
 
-  .about-title{
-    h2{
-      font-style: italic;
-      color: red;
+  .about-desc{
+    width: 30%;
+    p{
+      color: white;
+      font-size: 16px;
+      .kino{
+        font-size: 24px;
+        color: red;
+      }
     }
   }
   

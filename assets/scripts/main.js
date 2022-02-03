@@ -85,24 +85,24 @@ clc.addEventListener("click", () => {
 });
 
 
-//------------- SIDEBAR MENU START --------------//
+// //------------- SIDEBAR MENU START --------------//
 
 
-function openNav() {
-	document.querySelector(".nav-list").classList.add("nav-active");
+// function openNav() {
+// 	document.querySelector(".nav-list").classList.add("nav-active");
 
 
- }
+//  }
 
 
- function closeNav() {
-	document.querySelector(".nav-list").classList.remove("nav-active");
+//  function closeNav() {
+// 	document.querySelector(".nav-list").classList.remove("nav-active");
 	
- }
+//  }
 
 
 
-//----------- SIDEBAR MENU END -------//
+// //----------- SIDEBAR MENU END -------//
 //------------- SIDEBAR MENU START --------------//
 
 
