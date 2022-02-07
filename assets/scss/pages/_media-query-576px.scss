@@ -154,6 +154,18 @@
 
     .main{
 
+        .main-slider{
+
+            .slide-content {
+                
+                width: 90%;
+                height: 70%;
+                margin-left: 5%;
+           
+
+            }
+        }
+
      .team{
         .team-members{
             display: flex;
@@ -616,18 +628,67 @@
        
         }
 
-        .about{
-            .about-desc{
-                width: 70%;
-                text-align: center;
-                padding: 2.5rem;
+        .about-me {
+            width: 100%;
+            h2{
+             
+              padding: 0.5rem 1rem;
             }
+          
+            .main-box{
+              width: 80%;
+              margin-left: 10%;
+              height: 40vh;
+              background: black;
+             
+              
+          
+              .main-box-desc{
+               
+                width: 80%;
+                
+                
+                p{
+                  color: white;
+                  font-size: 14px;
+          
+                  .kino{
+                    font-size: 22px;
+                    line-height: 1.2rem;
+                    color: red;
+                  }
+                }
+              }
+          
+          
+             
+          
+            }
+           
+          
+          }
 
-            .box{
-                width: 70%;
-                margin-left: auto ;
-            }
-        }
+        // .about{
+        //     .about_main {
+        //         display: flex;
+        //         flex-direction: column;
+
+        //         .about-desc{
+        //             width: 70%;
+        //             text-align: center;
+        //             padding: 2.5rem;
+        //         }
+
+        //         .box{
+        //             width: 80%;
+        //             margin: 10% auto;
+        //           }
+             
+        //      }
+             
+
+          
+        //  }
      }
 
 
