@@ -143,6 +143,9 @@
         }
         a {
             transition: $general-transition;
+            font-size: 2.5rem;
+            margin: 0.5rem;
+           
 
             &:hover {
                 color: $primary-color;
