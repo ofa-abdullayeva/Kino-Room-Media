@@ -110,7 +110,7 @@
         text-align: center;
     }
 
-    .card-front, .card-back {
+    .card-front{
         position: absolute;
         top: 0;
         left: 0;
@@ -124,45 +124,100 @@
     background-color: #14151A;
 
         h4{
-            padding: 3rem;
+            padding: 1rem;
+        }
+        h5{
+            font-size: 1.5rem;
         }
     }
 
-    .card-back{
-    background-color: $secondary-color;
-    transform: rotateY(180deg);
-    display: table;
-
-    &-content {
-        display: table-cell;
-        vertical-align: middle;
-
-        p {
-            font-size: 1.2rem;
-
-        }
-        a {
-            transition: $general-transition;
-            font-size: 2.5rem;
-            margin: 0.5rem;
+    .signin{
+        width: 70vh;
+        height: auto;
+        background-color: #101115;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 10000;
+        animation-name: modalSlideUp;
+        animation-duration: 1s;
+        display: none;
+      
+        h2{
            
+            text-align: center;
+            color: $primary-color;
+            padding: 5px;
+            font-size: 26px;
+    
+        }
+        
+      
+    
+        &_box{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
 
-            &:hover {
-                color: $primary-color;
+            p{
+                font-size: 1.5rem;
+            }
+    
+         
+        }
+
+        .btn_close{
+            position: absolute;
+            top: 0;
+            right: 12px;
+            font-size: 36px;
+            margin-left: 50px;
+            cursor: pointer;
+            color: white !important;
+            &:hover{
+                opacity: 0.3;
             }
         }
-
     }
 
-    }
+    // .card-back{
+    // background-color: $secondary-color;
+    // transform: rotateY(180deg);
+    // display: table;
 
-    &:hover .card-front {
-        transform: rotateY(180deg);
-    }
+    // &-content {
+    //     display: table-cell;
+    //     vertical-align: middle;
 
-    &:hover .card-back {
-        transform: none;
-    }
+    //     p {
+    //         font-size: 1.2rem;
+
+    //     }
+    //     a {
+    //         transition: $general-transition;
+    //         font-size: 2.5rem;
+    //         margin: 0.5rem;
+           
+
+    //         &:hover {
+    //             color: $primary-color;
+    //         }
+    //     }
+
+    // }
+
+    // }
+
+    // &:hover .card-front {
+    //     transform: rotateY(180deg);
+    // }
+
+    // &:hover .card-back {
+    //     transform: none;
+    // }
 
 }
 

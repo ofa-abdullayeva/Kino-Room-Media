@@ -281,7 +281,7 @@ a {
   text-align: center;
 }
 
-.card .card-front, .card .card-back {
+.card .card-front {
   position: absolute;
   top: 0;
   left: 0;
@@ -296,40 +296,58 @@ a {
 }
 
 .card .card-front h4 {
-  padding: 3rem;
+  padding: 1rem;
 }
 
-.card .card-back {
-  background-color: #14151A;
-  transform: rotateY(180deg);
-  display: table;
+.card .card-front h5 {
+  font-size: 1.5rem;
 }
 
-.card .card-back-content {
-  display: table-cell;
-  vertical-align: middle;
+.card .signin {
+  width: 70vh;
+  height: auto;
+  background-color: #101115;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 10000;
+  animation-name: modalSlideUp;
+  animation-duration: 1s;
+  display: none;
 }
 
-.card .card-back-content p {
-  font-size: 1.2rem;
-}
-
-.card .card-back-content a {
-  transition: all 0.5s;
-  font-size: 2.5rem;
-  margin: 0.5rem;
-}
-
-.card .card-back-content a:hover {
+.card .signin h2 {
+  text-align: center;
   color: #E51515;
+  padding: 5px;
+  font-size: 26px;
 }
 
-.card:hover .card-front {
-  transform: rotateY(180deg);
+.card .signin_box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.card:hover .card-back {
-  transform: none;
+.card .signin_box p {
+  font-size: 1.5rem;
+}
+
+.card .signin .btn_close {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white !important;
+}
+
+.card .signin .btn_close:hover {
+  opacity: 0.3;
 }
 
 #slider {
@@ -412,6 +430,69 @@ img {
   }
   #dots-con {
     display: none;
+  }
+}
+
+body {
+  background-color: #101115;
+}
+
+.amedia {
+  width: 70%;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+}
+
+.amedia_desc {
+  height: 40vh;
+  background-color: #101115;
+  width: 100%;
+}
+
+.amedia_desc h2 {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 3.7rem;
+  color: red;
+}
+
+.amedia_desc p {
+  font-size: 1.8rem;
+}
+
+.amedia_desc p span {
+  font-size: 3rem;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .amedia {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 0.5rem;
+  }
+  .amedia_desc {
+    background-color: #101115;
+    width: 100%;
+  }
+  .amedia_desc h2 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    color: red;
+  }
+  .amedia_desc p {
+    font-size: 1.2rem;
+  }
+  .amedia_desc p span {
+    font-size: 1.4rem;
+    color: red;
   }
 }
 

@@ -1,0 +1,70 @@
+body{
+    background-color: #101115;
+}
+
+
+
+.amedia{
+    width: 70%;
+    position: absolute;
+    top: 57%;
+    left:  50%;
+    transform: translate(-50%,-50%);
+    padding: 0.5rem;
+    &_desc{
+        height: 40vh;
+        background-color: #101115;
+        width: 100%;
+        h2{
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 3.7rem;
+            color: red;
+        }
+        p{
+            font-size: 1.8rem;
+
+            span{
+                font-size: 3rem;
+                color: red;
+            }
+        }
+      
+        
+    }
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .amedia{
+        position: absolute;
+        top: 57%;
+        left:  50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        padding: 0.5rem;
+       
+        &_desc{
+            background-color: #101115;
+            width: 100%;
+           
+            h2{
+                text-align: center;
+                padding: 0.5rem;
+                font-size: 1.7rem;
+                color: red;
+            }
+            p{
+                font-size: 1.2rem;
+    
+                span{
+                    font-size: 1.4rem;
+                    color: red;
+                }
+            }
+          
+            
+        }
+       
+    }
+}
