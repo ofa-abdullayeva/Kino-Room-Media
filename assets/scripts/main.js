@@ -17,74 +17,64 @@ $(document).ready(function () {
 });
 
 //  slides
-var slides = document.querySelectorAll(".slide");
-var dots = document.querySelectorAll(".dot");
-var index = 0;
+// var slides = document.querySelectorAll(".slide");
+// var dots = document.querySelectorAll(".dot");
+// var index = 0;
 
 
-function prevSlide(n){
-  index+=n;
-  console.log("prevSlide is called");
-  changeSlide();
-}
+// function prevSlide(n){
+//   index+=n;
+//   console.log("prevSlide is called");
+//   changeSlide();
+// }
 
-function nextSlide(n){
-  index+=n;
-  changeSlide();
-}
+// function nextSlide(n){
+//   index+=n;
+//   changeSlide();
+// }
 
-changeSlide();
+// changeSlide();
 
-function changeSlide(){
+// function changeSlide(){
     
-  if(index>slides.length-1)
-    index=0;
+//   if(index>slides.length-1)
+//     index=0;
   
-  if(index<0)
-    index=slides.length-1;
+//   if(index<0)
+//     index=slides.length-1;
   
   
   
-    for(let i=0;i<slides.length;i++){
-      slides[i].style.display = "none";
+//     for(let i=0;i<slides.length;i++){
+//       slides[i].style.display = "none";
       
-      dots[i].classList.remove("active");
+//       dots[i].classList.remove("active");
       
       
-    }
+//     }
     
-    slides[index].style.display = "block";
-    dots[index].classList.add("active");
+//     slides[index].style.display = "block";
+//     dots[index].classList.add("active");
 
   
 
-}
+// }
 
 
 //about me
+//const d = new Date(2018, 11, 24, 10, 33, 30, 0);
+//document.getElementById("demo").innerHTML = d;
+// -----------footer--------------//
+const date = new Date();
+const year = date.getFullYear()
+
+document.getElementById('date').innerHTML =(year);
+
+// -----------footer--------------//
 
 
 
 
-
-// //------------- SIDEBAR MENU START --------------//
-
-
-// function openNav() {
-// 	document.querySelector(".nav-list").classList.add("nav-active");
-
-
-//  }
-
-
-//  function closeNav() {
-// 	document.querySelector(".nav-list").classList.remove("nav-active");
-	
-//  }
-
-
-
-// //----------- SIDEBAR MENU END -------//
 //------------- SIDEBAR MENU START --------------//
 
 
@@ -104,3 +94,26 @@ function changeSlide(){
 
 //----------- SIDEBAR MENU END -------//
 
+//---------------about me-----------------//
+
+
+const clc = document.querySelector(".cancel");
+const arr = document.querySelector(".arr_container");
+const left_container = document.querySelector(".left_container");
+
+arr.addEventListener("click", () => {
+  arr.classList.add("active_arr");
+  if (left_container.classList.contains("off")) {
+    left_container.classList.remove("off");
+    left_container.classList.add("active");
+  }
+});
+
+clc.addEventListener("click", () => {
+  arr.classList.remove("active_arr");
+  if (left_container.classList.contains("active")) {
+    left_container.classList.remove("off");
+    left_container.classList.add("off");
+  }
+});
+//---------------about me-----------------//
