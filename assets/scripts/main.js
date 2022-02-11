@@ -94,32 +94,7 @@ document.getElementById('date').innerHTML =(year);
 
 //----------- SIDEBAR MENU END -------//
 
-const openModal = document.querySelectorAll('.open_modal');
-console.log(openModal)
 
-const modal = document.querySelectorAll('.modal');
-console.log(modal);
-
-const closeModal = document.getElementsByClassName('.close_modal');
-console.log(closeNav);
-
-openModal.addEventListener('onClick',()=>{
-	modal.style.display = 'block';
-})
-
-closeModal.addEventListener('click',()=>{
-	modal.style.display = 'none';
-})
-
-
-window.addEventListener('click',(e)=>{
-	if(e.target == modal){
-		modal.style.display = 'none';
-	}
-})
-
-//------------ MODAL  end ----------------//
-//
 //---------------about me-----------------//
 
 
