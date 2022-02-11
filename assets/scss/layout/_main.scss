@@ -56,22 +56,25 @@
 
 /*  TEAM SECTION START */
 .team{
-  
+
   .team-members{
+    width: 100%;
     display: flex;
-    margin-bottom: 3rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
   
     .team-member {
-      width: 100%;
+      width: 20%;
       height: 100%;
+      margin-right: 2.8rem;
   
-      &:first-child {
-        margin-right: 3rem;
-      }
+      // &:first-child {
+      //   margin-right: 3rem;
+      // }
   
-      &:last-child {
-        margin-left: 3rem;
-      }
+      // &:last-child {
+      //   margin-left: 3rem;
+      // }
 
       
     }

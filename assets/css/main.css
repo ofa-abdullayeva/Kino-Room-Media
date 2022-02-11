@@ -272,12 +272,13 @@ a {
   height: 30rem;
   perspective: 1000px;
   margin: 2rem auto;
+  width: 100%;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 85%;
   text-align: center;
 }
 
@@ -296,11 +297,12 @@ a {
 }
 
 .card .card-front h4 {
+  font-size: 1.8rem;
   padding: 1rem;
 }
 
 .card .card-front h5 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .card .signin {
@@ -415,10 +417,6 @@ img {
   padding: 8px;
   border-radius: 50%;
   margin: 10px 5px;
-}
-
-.active {
-  background: crimson;
 }
 
 @media (max-width: 576px) {
@@ -665,21 +663,16 @@ body {
 
 /*  TEAM SECTION START */
 .team .team-members {
+  width: 100%;
   display: flex;
-  margin-bottom: 3rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .team .team-members .team-member {
-  width: 100%;
+  width: 20%;
   height: 100%;
-}
-
-.team .team-members .team-member:first-child {
-  margin-right: 3rem;
-}
-
-.team .team-members .team-member:last-child {
-  margin-left: 3rem;
+  margin-right: 2.8rem;
 }
 
 /*  TEAM SECTION END */
@@ -1413,12 +1406,6 @@ footer .container .down-social-link .yt {
 /*==========FOOTER END==========*/
 /*==========MAIN START==========*/
 /*==========MAIN END==========*/
-/*Media Query 1200px start*/
-/*Media Query 1200px end*/
-/*Media Query 992px start*/
-/*Media Query 992px end*/
-/*Media Query 768px start*/
-/*Media Query 768px end*/
 /*Media Query 576px start*/
 /*Media Query 576px end*/
 @media only screen and (max-width: 600px) {
@@ -1542,6 +1529,7 @@ footer .container .down-social-link .yt {
   .main .team .team-members {
     display: flex;
     flex-direction: column;
+    align-content: center;
   }
   .main .team .team-members .team-member {
     width: 80%;
@@ -1550,6 +1538,12 @@ footer .container .down-social-link .yt {
   }
   .main .team .team-members .team-member .team-member .card {
     margin-top: 2rem;
+  }
+  .main .team .team-members .team-member:first-child {
+    margin-right: 1.5rem;
+  }
+  .main .team .team-members .team-member:last-child {
+    margin-left: 3rem;
   }
   .main .masonary {
     display: flex;
